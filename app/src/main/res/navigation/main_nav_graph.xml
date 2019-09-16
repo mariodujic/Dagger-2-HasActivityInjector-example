@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/themesFragment">
+
+    <fragment
+        android:id="@+id/themesFragment"
+        android:name="com.groundzero.legoproject.themes.ui.ThemesFragment"
+        android:label="Lego Themes">
+        <action
+            android:id="@+id/action_themesFragment_to_singleThemeFragment"
+            app:destination="@id/singleThemeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleThemeFragment"
+        android:name="com.groundzero.legoproject.singletheme.ui.SingleThemeFragment"
+        android:label="Theme Preview"
+        tools:layout="@layout/fragment_single_theme" />
+</navigation>
